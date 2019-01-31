@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Displace Media is a web design and motion graphics company serving Tacoma and the Greater Seattle Area. We help small and medium sized businesses achieve greater visibility through smarter marketing.">
+    <link href="https://fonts.googleapis.com/css?family=Jura:400,700|Orbitron:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Displace Media: Web Design in the Tacoma and Seattle area</title>
+</head>
+<body>
+    <div id="link-container">
+            <div class="link" id="showcase-link">OUR WORK</div>
+            <h1 id="placeholder-title">Displace Media</h1>
+            <div class="link" id="contact-link">CONTACT</div>
+    </div>
+    <div id="video-container">
+        <video src="assets/dd.mp4" autoplay loop muted></video>
+    </div>
+    
+    <div id="showcase-container">
+        <div id="about-container">
+            <h1 class="title">ABOUT US</h1>
+            <div class="text-content">
+                Displace Media is a web design and motion graphics company that works with small to medium sized businesses around Tacoma and the greater Seattle area. We specialize in brochure/static type websites and animations that convey exactly what your business needs.
+            </div>
+        </div>
+        <h1 class="title">OUR WORK</h1>
+        <div id="video-container">
+                <iframe src="https://player.vimeo.com/video/137094309" width="888" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <div id="portfolio-container">
+            <div class="portfolio">
+                <img src="assets/placeholder.png" alt="">
+                <p><a href="https://google.com" target="_blank">Placeholder</a></p>
+            </div>
+            <div class="portfolio">
+                <img src="assets/placeholder.png" alt="">
+                <p><a href="https://google.com" target="_blank">Placeholder</a></p>
+            </div>
+            <div class="portfolio">
+                <img src="assets/placeholder.png" alt="">
+                <p><a href="https://google.com" target="_blank">Placeholder</a></p>
+            </div>
+            <div class="portfolio">
+                <img src="assets/placeholder.png" alt="">
+                <p><a href="https://google.com" target="_blank">Placeholder</a></p>
+            </div>
+            <div class="portfolio">
+                <img src="assets/placeholder.png" alt="">
+                <p><a href="https://google.com" target="_blank">Placeholder</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="contact-container">
+        <div id="contact">
+            <h1 class="title">CONTACT</h1>
+
+            <!--
+                https://blog.webjeda.com/google-form-customize/ to integrate a google form into a css editable form.
+            -->   
+            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdiHUPF-kuN8RXf5QkQWUkOdm2Ed4MhHQRQz1eOxrSq1426Fg/formResponse">
+                <p>Name</p>
+                <input type="text" placeholder="Required" name="entry.1311289951" required>
+                <p>Email</p>
+                <input type="email" placeholder="Required" name="emailAddress" required>
+                <p>Phone Number</p>
+                <input type="tel" placeholder="Required" name="entry.1824700150" required>
+                <p>Comments</p>
+                <textarea name="entry.1465250683" placeholder="Required" cols="30" rows="10" required></textarea>
+                <br>
+                &nbsp
+                <br>
+                <input type="submit" value="SEND" id="submit-button">
+            </form>
+            &nbsp
+            <p class="text-content">Feel free to email, call or text at anytime to see how we can help you.</p>
+            &nbsp
+            <p class="text-content">Email: <a href="mailto:displacemedia@gmail.com" target="_blank">DISPLACEMEDIA@GMAIL.COM</a></p>
+            &nbsp
+            <p class="text-content">Phone: <a href="tel:2066024200" target="_blank">206-602-4200</a></p>
+            &nbsp
+        </div>
+        <div id="social">
+            <h1 class="title">LINKS</h1>
+        </div> 
+        <div id="map"></div>
+    </div>
+
+    <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+    <script src="scripts.js"></script>
+</body>
+</html>

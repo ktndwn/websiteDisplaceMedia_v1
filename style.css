@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: Jura, sans-serif;
+    font-size: 15px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    background-color: #333;
+}
+
+
+#video-container {
+    overflow: hidden;   
+}
+
+
+
+#video-container video {
+    position: relative;
+    display:block;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+
+
+#link-container {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    top: 0;
+    opacity: 50%;
+    background-color: #050505;
+    transition: all .25s ease-in-out;
+}
+
+.link {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: solid 1px rgba(0, 191, 255, 0);
+    transition: all .25s ease-in-out;
+}
+
+.link:hover {
+    color: deepskyblue;
+    border-bottom: solid 1px rgb(0, 191, 255, 1);
+    transition: all .25s ease-in-out;
+}
+
+#placeholder-title {
+    font-family: Orbitron, Jura;
+    color: #050505;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 5px;
+    cursor: default;
+}
+
+#placeholder-title::selection {
+    color: #050505;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 25px);
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px,0px);
+    }
+}
+
+#title-link {
+    font-family: Orbitron, Jura;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 5px;
+    transition: all .25s ease-in-out;
+    animation: fadein .25s;
+}
+
+
+#showcase-container {
+    min-height: 50vh;
+    height: auto;
+    width: auto;
+    text-align: center;
+    background-color: #111;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px 0;
+    color: deepskyblue;
+}
+
+.text-content {
+    font-size: 17px;
+}
+
+.text-content a {
+    font-size: 17px;
+    color: deepskyblue;
+    text-decoration: none;
+    border-bottom: solid 1px rgba(0, 191, 255, 0);
+    transition: all .25s ease-in-out;
+}
+
+.text-content a:hover {
+    border-bottom: solid 1px rgba(0, 191, 255, 1);
+    transition: all .25s ease-in-out;
+}
+
+#about-container {
+    margin: auto;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 50px 15px;
+    background-color: #222;
+    width: 800px;
+    transition: all .25s ease-in-out;
+}
+
+
+
+
+#portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#portfolio-container div {
+    background-color: #222;
+    height: 300px;
+    width: 300px;
+    margin: 20px 10px;
+    padding: 10px;
+    border: solid 1px rgba(0, 191, 255, 0);
+    transition: all .25s ease-in-out;
+}
+
+#portfolio-container div:hover {
+    border: solid 1px rgba(0, 191, 255, 1);
+    transition: all .25s ease-in-out;
+}
+
+
+#portfolio-container img {
+    position: absolute;
+    z-index: 1;
+    height: 300px;
+    transform: translate(-50%, 0);
+    transition: all .25s ease-in-out;
+}
+
+#portfolio-container a {
+    position: absolute;
+    z-index: 2;
+    margin-top: 140px;
+    text-decoration: none;
+    font-size: 17px;
+    opacity: 0;
+    border-bottom: solid 1px rgba(0, 191, 255, 0);
+    transform: translate(-50%, 20px);
+    transition: all .25s ease-in-out;
+}
+
+#portfolio-container a:hover {
+    color: deepskyblue;
+    border-bottom: solid 1px rgba(0, 191, 255, 1);
+    transition: all .25s ease-in-out;
+}
+
+#portfolio-container div:hover img {
+    opacity: .25;
+    transition: all .25s ease-in-out;
+}
+
+#portfolio-container div:hover a {
+    opacity: 1;
+    transform: translate(-50%, 0);
+    transition: all .25s ease-in-out;
+}
+
+#contact-container {
+    text-align: center;
+    min-height: 320px;
+    height: auto;
+    padding: 50px 0px 0px 0px;
+    width: auto;
+    background: #222;
+}
+
+form p {
+    padding: 5px;
+}
+
+form input {
+    height: 25px;
+    width: 300px;
+    padding: 5px;
+    border: none;
+    background-color: #111;
+    color: deepskyblue;
+    transition: all .25s ease-in-out;
+}
+
+form textarea {
+    height: 100px;
+    width: 300px;
+    padding: 5px;
+    border: none;
+    background-color: #111;
+    color: deepskyblue;
+}
+
+#submit-button {
+    width: 315px;
+    height: 30px;
+}
+
+#submit-button:hover {
+    font-weight: 700;
+    cursor: pointer;
+    background-color: deepskyblue;
+    color: #111;
+    transition: all .25s ease-in-out;
+}
+
+
+
+
+#map {
+    height: 300px;
+    width: 100%;
+    transition: all .25s ease-in-out;
+}
+
+
+
+@media (max-width: 1000px) {
+    .link {
+        font-size: 12px;
+    }
+
+    .text-content {
+        font-size: 15px;
+    }
+
+    #about-container {
+        width: 300px;
+    }
+
+    #video-container iframe {
+        width: 100%;
+    }
+}
